@@ -4,7 +4,7 @@ import { Appliance, PowerStation, FilterCriteria } from './types';
 import { getSmartAdvice } from './services/geminiService';
 
 // ★★★ 手順1でデプロイした「ウェブアプリのURL」をここに貼り付けてください ★★★
-const GAS_API_URL = "YOUR_GAS_WEB_APP_URL_HERE";
+const GAS_API_URL = "https://script.google.com/macros/s/AKfycbw_TWOR2fBqif093LrmE-k8UwdhEajOdzj1aofnXmfX3_8W7x7lmGBHZwR_nbha_qP_PA/exec";
 
 const App: React.FC = () => {
   const [appliances, setAppliances] = useState<Appliance[]>([]);

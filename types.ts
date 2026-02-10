@@ -12,6 +12,7 @@ export interface PowerStation {
   price: number;
   capacity: number; // Wh
   output: number;   // W
+  maxOutput: number; // 瞬間最大出力
   weight: number;   // kg
   noise: number;    // dB
   hasLed: boolean;
@@ -19,6 +20,8 @@ export interface PowerStation {
   amazonUrl: string;
   rakutenUrl: string;
   imageUrl?: string;
+  batteryType?: string; // バッテリー種類
+  warranty?: string;    // 保証期間
 }
 
 export interface FilterCriteria {
